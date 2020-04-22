@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="30414" started-at="2020-04-22T07:21:40Z" finished-at="2020-04-22T07:22:11Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@69d9c55]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="RestAssuredTest" duration-ms="30414" started-at="2020-04-22T07:21:40Z" finished-at="2020-04-22T07:22:11Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@69d9c55]" name="setUpClass" is-config="true" duration-ms="907" started-at="2020-04-22T07:21:40Z" finished-at="2020-04-22T07:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@69d9c55]" name="runScenario" duration-ms="16778" started-at="2020-04-22T07:21:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-22T07:21:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Create Order feature with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Create Order feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@69d9c55]" name="runScenario" duration-ms="6235" started-at="2020-04-22T07:21:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-22T07:22:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Create Order feature with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Create Order feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@69d9c55]" name="runScenario" duration-ms="5476" started-at="2020-04-22T07:22:04Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-22T07:22:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Get Order feature with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Get Order feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [300] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [300] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at stepDefinition.ApiTestingStepDef.i_verify_the_status_code_as(ApiTestingStepDef.java:91)
+at ✽.I verify the status code as "300"(file:src/test/resources/features/APITesting_GetOrder.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@69d9c55]" name="tearDownClass" is-config="true" duration-ms="808" started-at="2020-04-22T07:22:10Z" finished-at="2020-04-22T07:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- RestAssuredTest -->
+  </suite> <!-- Suite -->
+</testng-results>
